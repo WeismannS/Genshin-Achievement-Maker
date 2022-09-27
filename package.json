@@ -2,7 +2,7 @@
   "name": "genshinachievement",
   "version": "1.0.0",
   "description": "Genshin Impact Achievement Maker",
-  "main": "index.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
@@ -10,7 +10,7 @@
     "format": "prettier --write \"lib/**/*.ts\" \"lib/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm test",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
@@ -29,7 +29,7 @@
     "url": "https://github.com/WeismannS/Genshin-Achievement-Maker/issues"
   },
   "files": [
-    "lib/**/*"
+    "lib"
   ],
   "homepage": "https://github.com/WeismannS/Genshin-Achievement-Maker#readme",
   "devDependencies": {

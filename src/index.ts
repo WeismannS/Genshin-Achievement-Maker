@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 import { createCanvas, loadImage, registerFont } from 'canvas';
 import { Stream } from 'stream';
 export async function genshinAchievement(text: string): Promise<Stream> {
