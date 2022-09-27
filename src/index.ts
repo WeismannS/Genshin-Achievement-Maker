@@ -15,5 +15,4 @@ export async function genshinAchievement(text: string): Promise<Stream> {
   ctx.fillStyle = '#8c7d6f';
   ctx.fillText(s.length > 27 ? secondLine[0] : `"` + s + `"`, 220, 145);
   s.length > 25 ? ctx.fillText(secondLine[1], 225, 190) : '';
-  return canvas.createPNGStream();
-}
+  return canvas.createPNGStream()}
