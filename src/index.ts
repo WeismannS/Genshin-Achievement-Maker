@@ -1,7 +1,7 @@
 import { createCanvas, loadImage, registerFont } from 'canvas';
 import { Stream } from 'stream';
 export async function genshinAchievement(text: string): Promise<Stream> {
-  registerFont('zh-cn.ttf', { family: 'genshin' });
+  registerFont('./lib/assets/zh-cn.ttf', { family: 'genshin' });
   const s: string = text.trim();
   const secondLine: string[] = [
     (`"` + s).slice(0, (`"` + s).slice(0, 25).lastIndexOf(' ')),
@@ -9,7 +9,7 @@ export async function genshinAchievement(text: string): Promise<Stream> {
   ];
   const canvas = createCanvas(719, 270);
   const ctx = canvas.getContext('2d');
-  const myimg = await loadImage('./row-2-column-1.png');
+  const myimg = await loadImage('./lib/assets/row-2-column-1.png');
   ctx.drawImage(myimg, 0, 0, 719, 270);
   ctx.font = '28px "genshin"';
   ctx.fillStyle = '#8c7d6f';
