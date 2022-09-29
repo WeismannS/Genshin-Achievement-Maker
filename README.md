@@ -1,4 +1,4 @@
-﻿﻿# Genshin-Achievement-Maker
+﻿# Genshin-Achievement-Maker
 Use genshin achievement Maker to get a custom achievement based on your input, takes a string of 50 characters max
 
 ![file](https://user-images.githubusercontent.com/60429301/193130253-fed41eed-a50d-45d0-9924-5da24508c713.png)
