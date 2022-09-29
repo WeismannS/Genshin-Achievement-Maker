@@ -29,7 +29,7 @@
     "url": "https://github.com/WeismannS/Genshin-Achievement-Maker/issues"
   },
   "files": [
-    "lib"
+    "lib/**/*"
   ],
   "homepage": "https://github.com/WeismannS/Genshin-Achievement-Maker#readme",
   "devDependencies": {
