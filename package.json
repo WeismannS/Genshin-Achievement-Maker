@@ -1,6 +1,6 @@
 {
-  "name": "Genshin-Achievement Maker",
-  "version": "1.0.0",
+  "name": "genshinachievement",
+  "version": "0.0.1",
   "description": "Genshin Impact Achievement Maker",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
