@@ -2,7 +2,7 @@
 import { createCanvas, loadImage, registerFont } from 'canvas';
 import { Stream } from 'stream';
 export async function genshinAchievement(text: string): Promise<Stream|never> {
-  registerFont(__dirname+"\\assets\\zh.cn.ttf", { family: 'genshin' });
+  registerFont(__dirname+"\\assets\\zh-cn.ttf", { family: 'genshin' });
   const s: string = text.trim();
   if (s.trim() == "" ||s.trim().length>50) return new Promise((resolve, reject) => {
       reject("Length must be less than 50 characters and not empty");
